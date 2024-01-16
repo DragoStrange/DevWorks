@@ -1,0 +1,9 @@
+{% for i in q %}
+<p>{{i.name}}</p>
+<form method="post">
+    {%csrf_token%}
+    <a href="{% url 'edit' i.roll%}">edit</a>
+    <a href="{% url 'delete' i.roll%}">delete</a>
+</form>
+{%endfor%}
+

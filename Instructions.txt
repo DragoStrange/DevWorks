@@ -1,0 +1,33 @@
+#Create Environment
+open cmd in a folder
+
+python -m venv firstenv
+
+#Activate Environment
+
+open cmd in Scripts folder
+activate
+
+#Django install
+
+pip install django
+
+#Starting project
+
+django-admin startproject Dev
+
+#running server
+
+python manage.py runserver
+
+#dbsqlite3 model creation,migration
+
+python manage.py makemigrations
+
+python manage.py migrate
+
+
+
+#adding images to backend
+
+from django

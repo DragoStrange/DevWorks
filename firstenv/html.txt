@@ -1,0 +1,37 @@
+<div>
+  <link href="./home.css" rel="stylesheet" />
+  <div class="home-container">
+    <div class="home-container1">
+      <div class="home-container2">
+        <img
+          alt="image"
+          src="/1000_f_652756634_r71gsznkxfs7vdirpt6muldcwkt98cwv-200h.jpg"
+          class="home-image"
+        />
+        <h3 class="home-text">WHY !</h3>
+        <svg viewBox="0 0 1024 1024" class="home-icon">
+          <path
+            d="M512 128l342 256v512h-214v-298h-256v298h-214v-512z"
+          ></path></svg
+        ><svg viewBox="0 0 1024 1024" class="home-icon2">
+          <path
+            d="M768 682l86 86v42h-684v-42l86-86v-212q0-100 51-174t141-96v-30q0-26 18-45t46-19 46 19 18 45v30q90 22 141 96t51 174v212zM512 938q-36 0-61-24t-25-60h172q0 34-26 59t-60 25z"
+          ></path></svg
+        ><svg viewBox="0 0 1024 1024" class="home-icon4">
+          <path
+            d="M512 598q108 0 225 47t117 123v86h-684v-86q0-76 117-123t225-47zM512 512q-70 0-120-50t-50-120 50-121 120-51 120 51 50 121-50 120-120 50z"
+          ></path>
+        </svg>
+      </div>
+    </div>
+    <div class="home-container3">
+      <div class="home-container4">
+        <input
+          type="text"
+          placeholder="Search..."
+          class="home-textinput input"
+        />
+      </div>
+    </div>
+  </div>
+</div>

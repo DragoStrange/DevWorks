@@ -1,0 +1,6 @@
+<form method="post">
+    {%csrf_token%}
+    <h1>Are You Sure You Want To Delete {{d1}}</h1>
+    <input type="submit">
+    <a href="{%url 'list'%}"><button>Back</button></a>
+</form>

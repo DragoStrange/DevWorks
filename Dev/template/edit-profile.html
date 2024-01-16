@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}New Post | {% endblock %}
+
+{% block content %}
+<section class="hero container">
+    <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+        <div class="write-post-container">
+            <h3 class="post-heading">Create Post</h3>
+            <div class="write-input-container">
+                <div class="user-profile">
+                    <img src="{% static 'images/dpplaceholder.png'%}" alt="">
+                    <div class="post-profile">
+                        <p>John Nicholson</p>
+                    </div>
+                </div>
+                <div class="post-input-container">
+                    {{form.caption}}
+                    <div class="addpost-links">
+                        <a class="post-image-icon" href="#">
+                            {{form.picture}}
+                        </a>
+                        <div class="tag-input">
+                            {{form.tag}}
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class=" post-btn">
+                    <button class="btn"  type="submit">Post Now</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
+{% endblock %}

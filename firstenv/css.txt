@@ -1,0 +1,101 @@
+.home-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.home-container1 {
+  width: 100%;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #06070b;
+}
+.home-container2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  max-width: auto;
+  align-items: center;
+  padding-left: var(--dl-space-space-threeunits);
+  flex-direction: row;
+  justify-content: center;
+}
+.home-image {
+  top: 15px;
+  left: 48px;
+  width: 37px;
+  height: 38px;
+  position: absolute;
+  object-fit: cover;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: var(--dl-radius-radius-round);
+}
+.home-text {
+  top: 23px;
+  left: 95px;
+  color: var(--dl-color-gray-white);
+  width: 63px;
+  height: 23px;
+  position: absolute;
+}
+.home-icon {
+  top: 15px;
+  fill: #185477;
+  left: 941px;
+  width: 45px;
+  height: 45px;
+  margin: auto;
+  position: absolute;
+}
+.home-icon2 {
+  top: 15px;
+  fill: #185477;
+  left: 869px;
+  width: 49px;
+  height: 45px;
+  margin: auto;
+  position: absolute;
+}
+.home-icon4 {
+  top: 15px;
+  fill: #185477;
+  left: 1010px;
+  width: 49px;
+  height: 43px;
+  position: absolute;
+}
+.home-container3 {
+  width: 100%;
+  height: var(--dl-size-size-maxwidth);
+  display: flex;
+  align-self: flex-start;
+  align-items: flex-start;
+  border-radius: var(--dl-radius-radius-radius8);
+  flex-direction: column;
+  background-color: #131720;
+}
+.home-container4 {
+  flex: 0 0 auto;
+  width: 385px;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  border-radius: var(--dl-radius-radius-radius4);
+  flex-direction: column;
+}
+.home-textinput {
+  color: var(--dl-color-success-700);
+  width: 302px;
+  height: 41px;
+  margin-top: var(--dl-space-space-oneandhalfunits);
+  margin-left: var(--dl-space-space-threeunits);
+  border-radius: 16px;
+  background-color: #185477;
+}

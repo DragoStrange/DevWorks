@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}New Post | {% endblock %}
+
+{% block content %}
+<section class="hero container">
+    <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+        <div class="write-post-container">
+            <h3 class="post-heading">Create Post</h3>
+            <br>
+            <div class="write-input-container">
+                <div class="user-profile">
+                    <img src="{% static 'images/dpplaceholder.png'%}" alt="">
+                    <div class="post-profile">
+                        <p>John Nicholson</p>
+                    </div>
+                </div>
+                <div id="imagePreview" class="image-preview"></div>
+                <div class="post-input-container">
+                    <textarea id="id_caption" placeholder='Caption' rows ='2' name="caption" class="auto-resize" oninput="autoResize(this)"></textarea>
+                    <div class="addpost-links">
+                        <label for="id_picture" class="post-image-icon">
+                            <input type="file" name="picture" id="id_picture" class="image-input" onchange="previewImage(this);" style="display: none;">
+                            <div class="header__resume btn">
+                                <span>Upload Image</span>
+                            </div>
+                        </label>
+                        <div class="tag-input">
+                            {{form.tag}}
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class=" post-btn">
+                    <button class="hero__btn btn"  type="submit">Post Now</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
+<script>
+    function autoResize(textarea) {
+        textarea.style.height = 'auto';
+        textarea.style.height = (textarea.scrollHeight) + 'px';
+    }
+    
+    function previewImage(input) {
+    var previewContainer = document.getElementById('imagePreview');
+    var previewImage = previewContainer.querySelector('img');
+
+    if (previewImage) {
+        previewImage.src = URL.createObjectURL(input.files[0]);
+    } 
+    else 
+    {
+        var newImage = document.createElement('img');
+        newImage.src = URL.createObjectURL(input.files[0]);
+        newImage.classList.add('preview-image');
+        previewContainer.appendChild(newImage);
+    }
+}
+</script>
+{% endblock %}
